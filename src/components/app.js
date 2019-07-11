@@ -8,10 +8,8 @@ export default class App extends Component {
     return (
       <div className='app'>
         <h1>cristina wood portfolio</h1>
+        <div>{moment().format('L')}</div>
         <PortfolioContainer />
-        <div>
-          {moment().format('L')}
-        </div>
       </div>
     );
   }
