@@ -20,6 +20,11 @@ export default class PortfolioContainer extends Component {
             return <PortfolioItem title={item.title} />;
         });
     }
+    handlePageTitleUpdate() {
+        this.setState({
+            pageTitle: "Something Else"
+        })
+    }
     render() {
         return (
             <div>
