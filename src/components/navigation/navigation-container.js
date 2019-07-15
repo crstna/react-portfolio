@@ -20,7 +20,6 @@ export default class NavigationComponent extends Component {
             <NavLink exact to="/blog">
                 Blog
             </NavLink>
-                {true ? <button>Add Blog</button> : null }
             </div>
         )
     }
