@@ -3,6 +3,7 @@ export default class NavigationComponent extends Component {
     constructor() {
         super();
     }
+    
     render() {
         return (
             <div>
