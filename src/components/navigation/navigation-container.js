@@ -13,6 +13,7 @@ export default class NavigationComponent extends Component {
             <NavLink exact to="/about-me">
                 About
             </NavLink>
+            <a href="/">Wrong Home</a>
                 <button>Contact</button>
                 <button>Blog</button>
                 {true ? <button>Add Blog</button> : null }
