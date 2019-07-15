@@ -18,7 +18,9 @@ export default class PortfolioContainer extends Component {
     }
     handleFilter(filter) {
         this.setState({
-            data: this.state.data.filter
+            data: this.state.data.filter(item => {
+                return item.category === filter;
+            })
         })
     }
     portfolioItems() {
@@ -35,6 +37,15 @@ export default class PortfolioContainer extends Component {
         return (
             <div>
                 <h2>{this.state.pageTitle}</h2>
+                <button onClick={() => this.handleFilter('eCommerce')}>
+                    eCommerce
+                </button>
+                <button onClick={() => this.handleFilter("Scheduling")}>
+                    Scheduling
+                </button>
+                <button onClick={() => this.handleFilter("Enterprise")}>
+                    Enterprise
+                </button>
                 {this.portfolioItems()}
                 <hr/>
                 <button onClick={this.handlePageTitleUpdate}>Change Title</button>
