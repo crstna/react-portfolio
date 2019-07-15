@@ -8,6 +8,8 @@ import {
 
 import PortfolioContainer from './portfolio/portfolio-container';
 import NavigationContainer from "./navigation/navigation-container";
+import Home from "./pages/home";
+import About from "./pages/about";
 
 
 export default class App extends Component {
@@ -18,7 +20,8 @@ export default class App extends Component {
           <div>
             <NavigationContainer />
             <switch>
-              <Route exact path="/" component={}
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about-me" component={About} />
             </switch>
           </div>
         </Router>
