@@ -21,7 +21,7 @@ export default class App extends Component {
             <NavigationContainer />
             <switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/about-me" component={About} />
+              <Route path="/about-me" component={About} />
             </switch>
           </div>
         </Router>
