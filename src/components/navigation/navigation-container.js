@@ -7,8 +7,12 @@ export default class NavigationComponent extends Component {
     render() {
         return (
             <div>
-                <button>Home</button>
-                <button>About</button>
+            <NavLink exact to="/">
+                Home
+            </NavLink>
+            <NavLink exact to="/about-me">
+                About
+            </NavLink>
                 <button>Contact</button>
                 <button>Blog</button>
                 {true ? <button>Add Blog</button> : null }
