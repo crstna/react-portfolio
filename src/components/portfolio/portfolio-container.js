@@ -18,7 +18,7 @@ export default class PortfolioContainer extends Component {
     render() {
         return (
             <div>
-                <h2>this.state.pageTitle</h2>
+                <h2>{this.state.pageTitle}</h2>
                 {this.portfolioItems()}
             </div>
         )
