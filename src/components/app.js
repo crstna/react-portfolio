@@ -24,7 +24,7 @@ export default class App extends Component {
             <h1>cristina wood portfolio</h1>
             <div>{moment().format('L')}</div>
             <NavigationContainer />
-            <switch>
+            <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about-me" component={About} />
               <Route path="/contact" component={Contact} />
@@ -35,7 +35,7 @@ export default class App extends Component {
                 component={PortfolioDetail} 
               />
               <Route component={NoMatch} />
-            </switch>
+            </Switch>
           </div>
         </Router>
       </div>
