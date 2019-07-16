@@ -25,7 +25,7 @@ export default class App extends Component {
     axios
     .get("https://cristina.devcamp.space/portfolio/portfolio_items")
     .then(response => {
-      console.log(response);
+      console.log("response data", response);
     })
     .catch(function(error) {
       console.log(error);
