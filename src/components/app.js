@@ -17,6 +17,10 @@ import NoMatch from "./pages/no-match";
 
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.getPortfolioItems = this.getPortfolioItems.bind(this);
+  }
   getPortfolioItems() {
     axios
     .get("https://cristina.devcamp.space/portfolio/portfolio_items")
