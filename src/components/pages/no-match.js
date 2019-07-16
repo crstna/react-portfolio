@@ -6,5 +6,5 @@ export default function() {
             <h2> We couldn't find that page</h2>
             <Link to="/">Return to homepage</Link>
         </div>
-    )
+    );
 }

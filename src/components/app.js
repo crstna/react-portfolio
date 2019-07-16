@@ -6,7 +6,6 @@ import {
   Route 
 } from 'react-router-dom';
 
-import PortfolioContainer from './portfolio/portfolio-container';
 import NavigationContainer from "./navigation/navigation-container";
 import Home from "./pages/home";
 import About from "./pages/about";
