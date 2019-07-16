@@ -20,6 +20,8 @@ export default class App extends Component {
       <div className='app'>
         <Router>
           <div>
+            <h1>cristina wood portfolio</h1>
+            <div>{moment().format('L')}</div>
             <NavigationContainer />
             <switch>
               <Route exact path="/" component={Home} />
@@ -29,9 +31,6 @@ export default class App extends Component {
             </switch>
           </div>
         </Router>
-        <h1>cristina wood portfolio</h1>
-        <div>{moment().format('L')}</div>
-        <PortfolioContainer />
       </div>
     );
   }

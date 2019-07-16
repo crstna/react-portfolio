@@ -3,7 +3,8 @@ import PortfolioContainer from "../portfolio/portfolio-container";
 export default function() {
     return (
         <div>
-            homepage
+            <h2>homepage</h2>
+            <PortfolioContainer />
         </div>
     )
 }
