@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from "moment";
+import axios from "axios";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +17,16 @@ import NoMatch from "./pages/no-match";
 
 
 export default class App extends Component {
+  getPortfolioItems() {
+    axios
+    .get("https://cristina.devcamp.space/portfolio/portfolio_items")
+    .then(response => {
+      console.log(response);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+  }
   render() {
     return (
       <div className='app'>
