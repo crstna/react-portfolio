@@ -21,11 +21,12 @@ export default class NavigationComponent extends Component {
                     <NavLink exact to="/blog" activeClassName="nav-link-active">
                         Blog
                     </NavLink>
+                    {false ? <button>Add Blog</button> : null}
                 </div>
                 <div className="right-side">
                     CRISTINA WOOD
                 </div>
             </div>
-        )
+        );
     }
 }
