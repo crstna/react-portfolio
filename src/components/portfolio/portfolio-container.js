@@ -12,14 +12,14 @@ export default class PortfolioContainer extends Component {
             data: []
         };
         this.handleFilter = this.handleFilter.bind(this);
-        this.getPortfolioItems = this.getPortfolioItems.bind(this);
+        // this.getPortfolioItems = this.getPortfolioItems.bind(this);
     }
     handleFilter(filter) {
         this.setState({
             data: this.state.data.filter(item => {
                 return item.category === filter;
             })
-        })
+        });
     }
     getPortfolioItems() {
         axios
@@ -27,7 +27,7 @@ export default class PortfolioContainer extends Component {
         .then(response => {
           this.setState({
               data: response.data.portfolio_items
-          })
+          });
         })
         .catch(function(error) {
           console.log(error);
@@ -60,6 +60,6 @@ export default class PortfolioContainer extends Component {
                 </button>
                 {this.portfolioItems()}
             </div>
-        )
+        );
     }
 }
