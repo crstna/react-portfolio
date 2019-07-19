@@ -12,7 +12,6 @@ export default class PortfolioContainer extends Component {
             data: []
         };
         this.handleFilter = this.handleFilter.bind(this);
-        // this.getPortfolioItems = this.getPortfolioItems.bind(this);
     }
     handleFilter(filter) {
         this.setState({
@@ -29,7 +28,7 @@ export default class PortfolioContainer extends Component {
               data: response.data.portfolio_items
           });
         })
-        .catch(function(error) {
+        .catch(error => {
           console.log(error);
         });
       }
@@ -58,9 +57,7 @@ export default class PortfolioContainer extends Component {
                 <button onClick={() => this.handleFilter("Enterprise")}>
                     Enterprise
                 </button>
-                <div className="portfolio-items-wrapper">
-                {this.portfolioItems()}
-                </div>
+                <div className="portfolio-items-wrapper">{this.portfolioItems()}</div>
             </div>
         );
     }
