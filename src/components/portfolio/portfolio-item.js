@@ -8,15 +8,18 @@ export default class PortoflioItem extends Component {
             portfolioItemClass: ""
         };
     }
-    handleMouseenter() {
+    handleMouseEnter() {
         this.setState({ portfolioItemClass: "image-blur" });
+    }
+    handleMouseLeave() {
+        this.setState({ portfolioItemClass: ""});
     }
     render() {
         const { id, description, thumb_image_url, logo_url } = this.props.item;
         return ( 
             <div 
-            className="portfolio-item-wrapper">
-            onMouseEnter={() => this.handleMouseenter()}
+            className="portfolio-item-wrapper"
+            onMouseEnter={() => this.handleMouseEnter()}
             onMouseLeave={() => this.handleMouseLeave()}
             >
                 <div
